@@ -34,6 +34,26 @@ class BankAccount:
         print(f"{self.owner} has ${self.__balance}")"""\
         
 class pet: 
-    def__init__(self, happiness, name, health):
-    self.happiness = happiness
-    self.name = name     
+    def __init__(self, happiness, name, health, hunger):
+        self.happiness = happiness
+        self.name = name     
+        self.health = health
+        self.hunger = hunger
+
+def play(self, game, value):
+    self.happiness += value
+    print(f"{self.name} is playing a {game}") 
+    print(f"{self.name}'s happiness increased to {self.happiness}")
+
+def eat(self, food, value):
+    self.hunger -= value
+    self.happiness += value
+    print(f"{self.name} is eating {food}")
+    print(f"{self.name}'s hunger decreased to {self.hunger} and {self.name}'s happiness increased to {self.value}")
+
+def 
+
+
+
+
+
