@@ -59,6 +59,12 @@ x = input("What is your pet's name?")
 x = pet(f"{x}", 0, True, 10)
 x.check()
 
+while x.life:
+    isitem = False
+    while not isitem:
+        choice = imput("\n What would you like to do with your pet?")
+
+
 
 
 
