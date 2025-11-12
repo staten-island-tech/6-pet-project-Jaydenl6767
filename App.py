@@ -51,8 +51,13 @@ def eat(self, food, value):
     print(f"{self.name} is eating {food}")
     print(f"{self.name}'s hunger decreased to {self.hunger} and {self.name}'s happiness increased to {self.value}")
 
-def 
+def check(self):
+    print(f"{self.name}'s happiness is currently {self.happiness}")
+    print(f"{self.name}'s hunger is now  {self.hunger}")
 
+x = input("What is your pet's name?")
+x = pet(f"{x}", 0, True, 10)
+x.check()
 
 
 
