@@ -62,9 +62,10 @@ x.check()
 while x.life:
     isitem = False
     while not isitem:
-        choice = imput("\n What would you like to do with your pet?")
+        choice = input("\n What would you like to do with your pet? \n"
+        "1: Check your pets stats\n"
+        "2: Play with your pet\n "
+        "3: Feed your pet\n") 
 
-
-
-
-
+if choice in ["Check your pets stats", "1", "stats", "check"]:
+    
