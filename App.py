@@ -68,4 +68,4 @@ while x.life:
         "3: Feed your pet\n") 
 
 if choice in ["Check your pets stats", "1", "stats", "check"]:
-    
+    x.check()
