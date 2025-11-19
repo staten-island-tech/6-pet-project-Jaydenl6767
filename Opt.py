@@ -1,22 +1,24 @@
 def acc(x,y):
     email = x
     password = y
-    valid == false
+    valid = False
     char = 0
 
-    for i in x:
-        if "@" not in x: 
+    if "@" not in x: 
             print ("You need to have an @ symbol")
-        elif "@" in x:
-            valid == true
+    if "@" in x:
+            valid = True
 
-    if valid == true:
-        print:("What is the password?") 
+    if valid == True:
+        print("What is the password?")
 
     for i in y:
-        str.isdigit 
+       char = char + 1
+    if char < 8:
+            print("Your password must be at least 8 characters long")
+    if str.isdigit(y) 
 
 
-        len(y)
-        acc(Jayden@415, 1234567)    
+      
+acc("Jayden415")    
     
