@@ -68,4 +68,7 @@ while x.life:
         "3: Feed your pet\n") 
 
 if choice in ["Check your pets stats", "1", "stats", "check"]:
-    
+    x.check()
+
+elif choice in ["Play with your pet", "2", "Play", "play"]:
+    print("What game would you like to play with your pet")
