@@ -34,21 +34,18 @@ class BankAccount:
         print(f"{self.owner} has ${self.__balance}")"""\
         
 class pet: 
-    def __init__(self, happiness, name, health, hunger):
+    def __init__(self, happiness, name, hunger):
         self.happiness = happiness
         self.name = name     
-        self.health = health
         self.hunger = hunger
 
-def play(self, game, value):
+def play(self, value):
     self.happiness += value
-    print(f"{self.name} is playing a {game}") 
     print(f"{self.name}'s happiness increased to {self.happiness}")
 
 def eat(self, food, value):
     self.hunger -= value
     self.happiness += value
-    print(f"{self.name} is eating {food}")
     print(f"{self.name}'s hunger decreased to {self.hunger} and {self.name}'s happiness increased to {self.value}")
 
 def check(self):
@@ -56,10 +53,9 @@ def check(self):
     print(f"{self.name}'s hunger is now  {self.hunger}")
 
 x = input("What is your pet's name?")
-x = pet(f"{x}", 0, True, 10)
-x.check()
+x = pet(True,10,f"{x}",10)
 
-while x.life:
+while x.life == True:
     isitem = False
     while not isitem:
         choice = input("\n What would you like to do with your pet? \n"
@@ -71,4 +67,12 @@ if choice in ["Check your pets stats", "1", "stats", "check"]:
     x.check()
 
 elif choice in ["Play with your pet", "2", "Play", "play"]:
-    print("What game would you like to play with your pet")
+    print("Your pet enjoyed playing with you")
+    x.play(10)
+
+elif choice in ["Feed your pet","3","Feed","feed"]:
+    print("Your pet was satisfied with it's meal")
+    x.hunger(10)
+
+
+
