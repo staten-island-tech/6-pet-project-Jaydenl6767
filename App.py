@@ -34,10 +34,11 @@ class BankAccount:
         print(f"{self.owner} has ${self.__balance}")"""\
         
 class pet: 
-    def __init__(self, happiness, name, hunger):
+    def __init__(self, happiness, name, hunger, life):
         self.happiness = happiness
         self.name = name     
         self.hunger = hunger
+        self.life = life
 
 def play(self, value):
     self.happiness += value
@@ -52,15 +53,16 @@ def check(self):
     print(f"{self.name}'s happiness is currently {self.happiness}")
     print(f"{self.name}'s hunger is now  {self.hunger}")
 
+
 x = input("What is your pet's name?")
-x = pet(True,10,f"{x}",10)
+x = pet(10, f"{x}" ,10, True)
 
 while x.life == True:
     isitem = False
     while not isitem:
         choice = input("\n What would you like to do with your pet? \n"
         "1: Check your pets stats\n"
-        "2: Play with your pet\n "
+        "2: Play with your pet\n"
         "3: Feed your pet\n") 
 
 if choice in ["Check your pets stats", "1", "stats", "check"]:
@@ -73,6 +75,3 @@ elif choice in ["Play with your pet", "2", "Play", "play"]:
 elif choice in ["Feed your pet","3","Feed","feed"]:
     print("Your pet was satisfied with it's meal")
     x.hunger(10)
-
-
-
