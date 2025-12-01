@@ -33,7 +33,7 @@ class BankAccount:
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}")"""\
         
-class pet: 
+"""class pet: 
     def __init__(self, happiness, name, hunger, life):
         self.happiness = happiness
         self.name = name     
@@ -74,5 +74,5 @@ elif choice in ["Play with your pet", "2", "Play", "play"]:
 
 elif choice in ["Feed your pet","3","Feed","feed"]:
     print("Your pet was satisfied with it's meal")
-    x.hunger(10)
+    x.hunger(10)"""
 
