@@ -65,15 +65,18 @@ while x.life == True:
         "2: Play with your pet\n"
         "3: Feed your pet\n") 
 
-if choice in ["Check your pets stats", "1", "stats", "check"]:
+if choice == ["Check your pets stats", "1", "stats", "check"]:
     x.check()
 
-elif choice in ["Play with your pet", "2", "Play", "play"]:
+elif choice == ["Play with your pet", "2", "Play", "play"]:
     print("Your pet enjoyed playing with you")
     x.play(10)
 
-elif choice in ["Feed your pet","3","Feed","feed"]:
+elif choice == ["Feed your pet","3","Feed","feed"]:
     print("Your pet was satisfied with it's meal")
     x.hunger(10)
+
+else:
+    print("Please Try Again")
 
 
