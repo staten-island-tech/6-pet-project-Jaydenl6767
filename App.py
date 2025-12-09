@@ -44,7 +44,7 @@ def play(self, value):
     self.happiness += value
     print(f"{self.name}'s happiness increased to {self.happiness}")
 
-def eat(self, food, value):
+def eat(self, value):
     self.hunger -= value
     self.happiness += value
     print(f"{self.name}'s hunger decreased to {self.hunger} and {self.name}'s happiness increased to {self.value}")
@@ -64,11 +64,13 @@ while x.life == True:
         "3: Feed your pet\n") 
 
         if choice in ["Check your pets stats", "1", "stats", "check"]:
-            x.check()
+            print(f"{x.name}'s happiness is {x.happiness}")
+            print(f"{x.name}'s hunger is now {x.hunger}")
 
         elif choice in ["Play with your pet", "2", "Play", "play"]:
             print("Your pet enjoyed playing with you")
             x.play(10)
+            print(f"{x.name}'s happiness increased to {x.happiness}")
 
         elif choice in ["Feed your pet","3","Feed","feed"]:
             print("Your pet was satisfied with it's meal")
